@@ -24,3 +24,31 @@ function getHumanChoice() {
         return getHumanChoice();
     }
 }
+
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound(humanChoice, computerChoice) {
+    if (
+        (humanChoice === "rock" && computerChoice === "scissor") ||
+        (humanChoice === "paper" && computerChoice === "rock") ||
+        (humanChoice === "scissors" && computerChoice === "paper")
+    ) {
+        console.log(`You chose ${humanChoice}, computer chose ${computerChoice}. You win!`);
+        humanScore++;
+    } else if (
+        (computerChoice === "rock" && humanChoice === "scissor") || 
+        (computerChoice === "paper" && humanChoice === "rock") ||
+        (computerChoice === "scissors" && humanChoice === "paper")
+    ) {
+        console.log(`You chose ${humanChoice}, computer chose ${computerChoice}. You lose!`);
+        computerScore++;
+    } else {
+        console.log(`You chose ${humanChoice}, computer chose ${computerChoice}. It's a tie!`);
+    }
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getCOmputerChoice();
+
+playRound(humanSelection, computerSelection);
