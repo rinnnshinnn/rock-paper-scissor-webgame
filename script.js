@@ -13,3 +13,14 @@ function getCOmputerChoice() {
         return "Invalid choice!"; 
     }
 }
+
+function getHumanChoice() {
+    let choice = prompt("What's your choice?");
+
+    if (choice.toLowerCase() === "rock" || choice.toLowerCase() === "paper" || choice.toLowerCase() === "scissors") {
+        return choice.toLowerCase();
+    } else {
+        alert("Invalid choice! Please enter 'rock', 'paper', or'scissors'.");
+        return getHumanChoice();
+    }
+}
