@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cinzel', serif;  
+    background-color: #d6c3a3;  
+    color: #3b3024; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+    margin: 0;  
+}
+
+#game {
+    text-align: center;
+    background-color: #f5ecd2;  
+    padding: 30px;
+    border-radius: 15px;  
+    border: 3px solid #8b6a4f;  
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;  
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;  
+}
+
+#choices button {
+    font-size: 20px;
+    padding: 12px 25px;
+    margin: 15px;
+    border: 2px solid #8b6a4f;  
+    border-radius: 10px;  
+    background-color: #d4b483;  
+    color: #3b3024;  
+    cursor: pointer;  
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Smooth transition for hover effects */
+    font-family: 'Cinzel', serif;  
+}
+
+#choices button:hover {
+    background-color: #c3a072; 
+    transform: translateY(-3px);  /* Slight lift effect on hover */
+}
+
+#choices button:disabled {
+    background-color: #a48f6e;  
+    cursor: not-allowed;  
+}
+
+#result {
+    font-size: 22px;
+    margin-top: 25px;
+    font-style: italic;  
+}
+
+#scoreboard {
+    font-size: 26px;
+    margin-bottom: 25px;
+    font-weight: bold;  
+}
+
+.win {
+    color: green;  
+}
+
+.lose {
+    color: red;  
+}
+
+.tie {
+    color: orange;  
+}
