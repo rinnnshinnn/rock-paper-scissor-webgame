@@ -54,6 +54,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const winner = determineWinner(humanScore, computerScore);
         if (winner) {
             result.textContent = winner;
+            setTimeout(() => {
+                result.textContent = "Make your choice, brave warrior!";
+                result.className = '';
+            }, 1500);
             humanScore = 0;
             computerScore = 0;
             updateScoreBoard();
