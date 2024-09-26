@@ -2,9 +2,13 @@
 
 ## Table of Contents
 
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Usage](#usage)
+- [Rock Paper Scissors Game](#rock-paper-scissors-game)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Usage](#usage)
+  - [Live Demo](#live-demo)
+  - [Files](#files)
 
 ## Introduction
 
@@ -24,6 +28,10 @@ This project is a simple implementation of the classic Rock-Paper-Scissors game,
 3. The computer will randomly select its choice.
 4. The result of each round and the updated scores will be displayed on the webpage.
 5. The game continues until one player reaches 5 points, at which point the game outcome will be displayed, and the scores will reset.
+
+## Live Demo
+
+[Click here to view the live demo](https://rinnnshinnn.github.io/rock-paper-scissor-webgame/)
 
 ## Files
 
