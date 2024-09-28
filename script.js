@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Event listener to handle player's choice input
     document.querySelector("#choices").addEventListener("click", (event) => {
         const choice = event.target.id;
-        if (choices.includes(choice)) {
+        if (event.target.tagName === 'BUTTON' && choices.includes(choice)) {
             playRound(choice);
         }
     });
